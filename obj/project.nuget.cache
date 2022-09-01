@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dzfMvx2spPBzfsfCb2ld31CBZXSMh1SD23kI98/evxeHihTmpqdxSShUvQSqpcyXo/7lIDyK3NEL3fFFLeq2dQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MesterComputer.com\\Desktop\\Crawler\\Crawler.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MesterComputer.com\\.nuget\\packages\\htmlagilitypack\\1.11.45\\htmlagilitypack.1.11.45.nupkg.sha512"
+  ],
+  "logs": []
+}
