@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MesterComputer.com\\Desktop\\Crawler\\Crawler.csproj": {}
+    "D:\\Projects\\Crawler\\Crawler.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MesterComputer.com\\Desktop\\Crawler\\Crawler.csproj": {
+    "D:\\Projects\\Crawler\\Crawler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MesterComputer.com\\Desktop\\Crawler\\Crawler.csproj",
+        "projectUniqueName": "D:\\Projects\\Crawler\\Crawler.csproj",
         "projectName": "Crawler",
-        "projectPath": "C:\\Users\\MesterComputer.com\\Desktop\\Crawler\\Crawler.csproj",
+        "projectPath": "D:\\Projects\\Crawler\\Crawler.csproj",
         "packagesPath": "C:\\Users\\MesterComputer.com\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MesterComputer.com\\Desktop\\Crawler\\obj\\",
+        "outputPath": "D:\\Projects\\Crawler\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MesterComputer.com\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "HtmlAgilityPack": {
               "target": "Package",
               "version": "[1.11.45, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [

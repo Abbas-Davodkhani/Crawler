@@ -1,16 +1,53 @@
-﻿@{
+﻿@using Newtonsoft.Json
+@{
     ViewData["Title"] = "Home Page";
+}
+
+@section css{
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <style>
+        #mapid
+        {
+            height: 500px;
+        }
+    </style>
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Last earthquake in UK</p>
+</div>
+
+<div id="mapid">
+
 </div>
 
 
-
-
-@foreach (var item in ViewBag.crawlerData)
+@section Scripts
 {
-    @Html.Raw(item)
+   
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        var mymap = L.map('mapid').setView([44.8654316, 55.0846004], 3)
+            // add the OpenStreetMap tiles
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+            { subdomains: ['a', 'b', 'c'] })
+            .addTo(mymap)
+
+
+
+    
+        var data = @Html.Raw(JsonConvert.SerializeObject(ViewBag.Result));
+
+        for(var i=0; i < data.length;i++)
+        {
+            L.marker([data[i].Lat , data[i].Lon]).addTo(mymap);
+        }
+
+
+
+    </script>
 }
+
+
+
